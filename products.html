@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title> <!--Title Name-->
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Tangerine&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand logo" href="index.html">Café Céleste</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="nav-item my-2 my-sm-0" type="submit">
+                    <img src="/images/search.png" alt="Search" />
+                </button>
+            </form>
+            <a class="nav-item cart" href="cart.html"><img src="/images/cart.png"></a>
+            <a class="nav-item login" href="login.html"><img src="/images/user.png"></a>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="products">
+        <div class="container">
+            <h1 class="menu-title">Our Menu</h1>
+
+            <!-- Beverages Section -->
+            <div class="menu-category">Beverages</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/espresso.jpeg" alt="Espresso">
+                        <span class="menu-item-name">Espresso
+                            <div class="allergens">
+                                <h5>Allergens: None</h5>
+                            </div>
+                        </span>
+                        <span class="menu-item-price">$3.00</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/cappucino.jpeg" alt="Cappuccino">
+                        <span class="menu-item-name">Cappuccino
+                            <div class="allergens">
+                                <h5>Allergens: Dairy</h5>
+                            </div>
+                        </span>
+                        <span class="menu-item-price">$4.50</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appetizers Section -->
+            <div class="menu-category">Appetizers</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/garlic-bread.jpeg" alt="Garlic Bread">
+                        <span class="menu-item-name">Garlic Bread
+                            <div class="allergens">
+                                <h5>Allergens: Gluten, Dairy</h5>
+                            </div>
+                        </span>
+
+                        <span class="menu-item-price">$5.00</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/Sandwich.jpg" alt="Sandwich">
+                        <span class="menu-item-name">Sandwich
+                            <div class="allergens">
+                                <h5>Allergens: Gluten, Dairy</h5>
+                            </div>
+                        </span>
+
+                        <span class="menu-item-price">$6.50</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Course Section -->
+            <div class="menu-category">Main Course</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/grilled-chicken.jpeg" alt="Grilled Chicken">
+                        <span class="menu-item-name">Grilled Chicken
+                            <div class="allergens">
+                                <h5>Allergens: None</h5>
+                            </div>
+                        </span>
+
+                        <span class="menu-item-price">$12.00</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/pasta-alfredo.jpeg" alt="Pasta Alfredo">
+                        <span class="menu-item-name">Pasta Alfredo<div class="allergens">
+                                <h5>Allergens: Gluten, Dairy</h5>
+                            </div></span>
+
+                        <span class="menu-item-price">$10.50</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts Section -->
+            <div class="menu-category">Desserts</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/chocolate-lava-cake.png" alt="Chocolate Lava Cake">
+                        <span class="menu-item-name">Chocolate Lava Cake
+                            <div class="allergens">
+                                <h5>Allergens: Dairy, Gluten</h5>
+                            </div>
+                        </span>
+
+                        <span class="menu-item-price">$6.00</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="menu-item">
+                        <img src="/images/menu/tiramisu.jpg" alt="Tiramisu">
+                        <span class="menu-item-name">Tiramisu
+                            <div class="allergens">
+                                <h5>Allergens: Dairy, Gluten</h5>
+                            </div>
+                        </span>
+
+                        <span class="menu-item-price">$6.50</span>
+                        <div class="quantity-container">
+                            <input class="quantity-input" type="number" value="1" min="1">
+                            <button class="add-to-cart-btn">
+                                <a href="cart.html">Add to Cart</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h2>Cafe Celeste</h2>
+                <p>Welcome to Cafe Celeste – where every sip tells a story<br> and every bite feels like home</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="event-reservation.html">Event Reservation</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <p>Follow us:</p>
+                <a href="#">Facebook</a> |
+                <a href="#">Instagram</a> |
+                <a href="#">Twitter</a>
+            </div>
+            <div class="footer-contact">
+                <p>123 Coffee St, Coffeeville</p>
+                <p>+1-234-567-890</p>
+                <p>info@cafeceleste.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p style="color: white;">&copy; 2024 Cafe Celeste. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
